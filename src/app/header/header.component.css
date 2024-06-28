@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+    justify-content: space-around;
+    padding: 10px;
+    height: 10vh;
+    align-items: center;
+}
+.image{
+    background-image: url('../../assets/Images/image\ 2.jpg');
+    background-position: center;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
