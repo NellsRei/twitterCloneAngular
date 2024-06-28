@@ -1,9 +1,18 @@
 export interface User{
     id:number,
+    name:string,
     username:string,
     email:string,
-    address: [],
+    address: {
+        street:string,
+        suite:string,
+        city:string
+    },
     phone:number,
     website:string,
-    company:[]
+    company:{
+        name:string,
+        catchPhrase:string,
+        bs:string
+    }
 }

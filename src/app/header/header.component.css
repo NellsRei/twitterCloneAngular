@@ -19,3 +19,15 @@
     justify-content: center;
     background-repeat: no-repeat;
 }
+.userdetails{
+    padding-left: 10px;
+
+}
+.profile-image img{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    top: -40px;
+    margin-left: 20px;
+}

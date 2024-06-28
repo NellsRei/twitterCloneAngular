@@ -1,14 +1,31 @@
 <!-- <p>header works!</p> -->
 <div class="header">
-    <h1>Twitter Clone</h1>
-    <label for="profiles">Search:
-        <select id="profiles">
-          <option value="Nairobi">Nairobi</option>
-          <option value="Paris">Paris</option>
-          <option value="Mt Kenya">Mt Kenya</option>
-        </select>
-    </label>
+  <h1>Twitter Clone</h1>
+  <label for="profiles">Search:
+      <select id="profiles" (change)="onSelectUser($event)">
+        <option *ngFor="let user of users" [value]="user.id" >{{user.name}}</option>
+      </select>
+  </label>
 </div>
-<div class="image">
-    
+<div class="image"> 
+</div>
+
+<div class="profile-image">
+  <img src="https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703_640.jpg" alt="" class="profile">
+</div>
+
+<div class="body">
+  <div class="userdetails">
+    <p>&#64;{{username}}</p>
+    <p>{{name}}</p>
+    <p>{{email}}</p>
+    <p>{{catchphrase}}</p>
+    <p>{{location}}</p>
+  </div>
+</div>
+
+
+<div class="posts">
+  <p>{{posts.title}}</p>
+  <p>{{posts.body}}</p>
 </div>

@@ -11,6 +11,7 @@ import { Comments } from '../../Model/comments';
 export class AllRoutesService {
 
   private readonly userLink = "https://jsonplaceholder.typicode.com/users/1"
+  private readonly allUsers = "https://jsonplaceholder.typicode.com/users"
   private readonly postsURL = " https://jsonplaceholder.typicode.com/posts"
   private readonly commentsURL = "https://jsonplaceholder.typicode.com/comments"
 
@@ -18,6 +19,9 @@ export class AllRoutesService {
 
   getUser():Observable<User[]>{
     return this.http.get<User[]>(this.userLink)
+  }
+  getUsers():Observable<User[]>{
+    return this.http.get<User[]>(this.allUsers)
   }
   getPosts():Observable<Posts[]>{
     return this.http.get<Posts[]>(this.postsURL)
